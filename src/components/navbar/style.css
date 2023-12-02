@@ -1,0 +1,145 @@
+.gradient_home{
+	background: rgb(74,36,99);
+	background: linear-gradient(157deg, rgba(74,36,99,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.gradient_text{
+	background: #CFCF38;
+	background: linear-gradient(to right, #CFCF38 0%, #F1FF73 50%, #EDF099 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.logo{
+	width: 2rem;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid rgb(139, 74, 139);
+	transition: 0.5s;
+	align-items: center;
+}
+.ula{
+	display: flex;
+	justify-content: space-around;
+	padding: 0.6rem 0;
+}
+.li{
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+.left_side{
+	width: 30vw;
+}
+
+.right_side{
+	width: 40vw;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 2rem;
+}
+.log_in p{
+	color: white;
+	cursor: pointer;
+	padding: 0 1.5rem;
+}
+.sign_up{
+	background-color: rgb(147,51,234);
+	padding: 0.8rem 2rem;
+	color: wihte;
+	border-radius: 2rem;
+	cursor: pointer;
+	border: none;
+	color: white;
+	font-size: medium;
+}
+.burger{
+	display: none;
+	position: absolute;
+	cursor: pointer;
+	right: 1%;
+	top: 15px;
+	z-index: 60;
+}
+.line{
+	width: 25px;
+	background-color: white;
+	height: 3px;
+	margin: 3px 3px;
+	border-radius: 5px;
+}
+
+@media (max-width:1130px) {
+	.navbar{
+		height: 50px;
+		justify-content: center;
+		flex-direction: column;
+		width: 100vw;
+		align-items: flex-start;
+	}
+
+	.left_side ul{
+		flex-direction: column;
+		z-index: 50;
+		align-items: flex-start;
+		margin-left: 2rem;
+
+	}
+	.li{
+		padding: 5px 0;
+		font-size: 2em;
+		font-weight: bold;
+	}
+	.right_side{
+		justify-content: start;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 2rem;
+	}
+	.log_in{
+		margin-bottom: 1.5rem;
+		font-size: 2rem;
+		font-weight: 900;
+	}
+	.log_in p{
+		padding: 0;
+	}
+	.sign_up button{
+		padding: 1rem 2rem;
+	}
+
+	.burger{
+		display: block;
+	}
+	.v_nav_resp{
+		opacity: 0;
+	}
+	.h_nav_resp{
+		height: 50vh;
+	}
+}
+
+@media (max-width:800px){
+	.li{
+		font-size: large;
+	}
+	.log_in p{
+		font-size: large;
+	}
+	.sign_up{
+		padding: 0.5rem 1.5rem;
+	}
+	
+}
+
+@media(max-width:520px){
+	.home_row1{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
